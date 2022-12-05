@@ -9,7 +9,7 @@ from operator import itemgetter
 
 
 def sort_list_of_cities(list_of_cities):
-    print(sorted(list_of_cities, key=itemgetter(3)))
+    return sorted(list_of_cities, key=itemgetter(3))
 
 
 def main():
@@ -26,8 +26,8 @@ def main():
         ["Cukierkowa", "23", 5, "Poznan", "02-326"]
     ]
 
-    sort_list_of_cities(list_of_cities)
-
+    sorted_list = sort_list_of_cities(list_of_cities)
+    print(sorted_list)
 
 if __name__=='__main__':
     main()
