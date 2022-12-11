@@ -55,8 +55,7 @@ def main():
     envelope_medium = Envelope(20, 30)
     envelope_big = Envelope(30, 30)
     
-    list_of_envelopes = []
-    list_of_envelopes.extend([envelope_small, envelope_medium, envelope_big])
+    list_of_envelopes = [envelope_small, envelope_medium, envelope_big]
 
     fitting_pairs = match_gift_with_envelope(list_of_gifts, list_of_envelopes) 
     for gift, envelope in fitting_pairs.items():
