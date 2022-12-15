@@ -8,7 +8,7 @@ def calculate_rectangle_field(width, lenght):
     return width * lenght
 
 
-def calculate_amount_of_ingredients(calculate_circle_field, calculate_rectangle_field, ngredients):
+def calculate_amount_of_ingredients(calculate_circle_field, calculate_rectangle_field, ingredients):
     factor = calculate_circle_field/calculate_rectangle_field
     needed_ingredients = dict()
 
