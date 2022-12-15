@@ -12,7 +12,7 @@ def calculate_amount_of_ingredients(calculate_circle_field, calculate_rectangle_
     factor = calculate_circle_field/calculate_rectangle_field
     needed_ingredients = dict()
 
-    for name, value in Ingredients.items():
+    for name, value in ingredients.items():
         needed_ingredients[name] = round(value * factor)
     return needed_ingredients
 
@@ -32,7 +32,7 @@ def main():
 
     circle_field = calculate_circle_field(diameter)
     rectangle_field = calculate_rectangle_field(width, lenght)
-    needed_ingredients = calculate_amount_of_ingredients(circle_field, rectangle_field, Ingredients)
+    needed_ingredients = calculate_amount_of_ingredients(circle_field, rectangle_field, ingredients)
 
     for name, value in needed_ingredients.items():
         print(f'{name}: {value}')
